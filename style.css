@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+}
+
+.wrapper{
+    /* height: 100vh; */
+    width: 770px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 30px rgb(0,0,0,0.5);
+}
+
+.inputfield{
+    /* margin: 7px;
+    height: 30px;
+    border:1px solid #bfbfbf;
+    border-radius: 5px;
+    width:100% ;
+    padding-left: 10px; */
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+    
+}
+
+
+.wrapper .content-box{
+    padding: 13px 20px 0;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.wrapper .content-box .result-details{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5 ;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 10px;
+}
+
+.wrapper .content-box .result-details ul{
+    width: calc(100%-140px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+ 
+.wrapper .content-box .result-details ul li{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.wrapper .content-box .result-details .btn{
+    width: 105px;
+    outline: none;
+    border: none;
+    color: white;
+    background: orange;
+    padding: 6px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+
+.btn:active{
+    transform: scale(0.97);
+}
+
+.content-box .typing-text p span{
+    position: relative;
+}
+
+.typing-text p span.active{
+    color : orange;
+}
+
+.typing-text p span.correct{
+    color : green;
+}
+
+.typing-text p span.incorrect{
+    color : red;
+    outline: 1px solid #fff;
+    background: rgb(255, 158, 158);
+    border-radius: 4px;
+}
+
+::selection{
+    color: #fff;
+    background: orange;
+}
+
